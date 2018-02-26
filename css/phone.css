@@ -1,0 +1,38 @@
+/* Phones */
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    nav.mainNavigation ul {
+        text-align: center;
+    }
+    nav.mainNavigation ul li {
+        display: block;
+        padding: 7px 0;
+        margin: 0;
+    }
+
+    body .content img.logo, body .content img.splash {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+

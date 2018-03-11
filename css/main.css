@@ -120,7 +120,7 @@ body .content img.logo {
 body .content img.splash {
     margin: auto;
     width: 462px;
-    height: 282px;
+    height: auto;
 }
 
 footer {

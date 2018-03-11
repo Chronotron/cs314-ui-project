@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/phone.css" media="screen and (min-width: 140px) and (max-width: 380px)">
     <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 381px) and (max-width: 1024px)">
-    <link rel="stylesheet" href="../css/join.css">
-    <title>Survey</title>
+    <link rel="stylesheet" href="../css/awards.css">
+    <title>Awards</title>
 </head>
 <body>
 <nav class="mainNavigation">
@@ -28,42 +28,36 @@
     </ul>
 </nav>
 <div class="content">
-    <p id="personal">
-        You're almost done %NAME%. First, fill out this survey to give us an idea about what you expect to get out of the Klub.
-    </p>
-    <hr>
-    <form id="join" name="join" onsubmit="return onSurveySubmit()">
-        <div class="inputGroup">
-            <label for="experience">Level of Cooking Experience</label>
-            <select id="experience" required>
-                <option value="1">None</option>
-                <option value="2">Some</option>
-                <option value="3">Average</option>
-                <option value="4">Accomplished</option>
-                <option value="5">Expert</option>
-            </select>
-        </div>
-        <div class="inputGroup">
-            <label>Interests (Check All That Apply)</label>
-            <label class="checkOption">
-                <input id="cooking" type="checkbox">
-                Cooking
-            </label>
-            <label class="checkOption">
-                <input id="wellness" type="checkbox">
-                Health and Wellness
-            </label>
-            <label class="checkOption">
-                <input id="charity" type="checkbox">
-                Charity Work
-            </label>
-            <label class="checkOption">
-                <input id="social" type="checkbox">
-                Meeting new people
-            </label>
-        </div>
-        <button type="submit">Join</button>
-    </form>
+    <picture>
+        <source media="(min-width: 650px)" srcset="../img/BoizKlubLogo.png">
+        <source media="(min-width: 465px)" srcset="../img/BoizKlubLogo_sm.png">
+        <img class="logo" src="../img/BoizKlubLogo.png" alt="Boiz Klub">
+    </picture>
+    <picture>
+        <source media="(min-width: 650px)" srcset="../img/award.png">
+        <source media="(min-width: 465px)" srcset="../img/award_sm.png">
+        <img class="splash" src="../img/award.png" alt="Splash">
+    </picture>
+</div>
+<div class="awards">
+    <div class="award">
+        <h3>2017</h3>
+        <p>
+             Charity Pie Eating Champion Russel Stevens
+        </p>
+    </div>
+    <div class="award">
+        <h3>2017, 2016, 2014</h3>
+        <p>
+             Podunk Goat Cookoff Champions Russel Stevens, Donna Knoble
+        </p>
+    </div>
+    <div class="award">
+        <h3>2017</h3>
+        <p>
+            Participant Podunk Team Fun Run: Will Jones, Russel Stevens, Kat Aiken
+        </p>
+    </div>
 </div>
 <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -71,10 +65,6 @@
 <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
 <script src="../js/main.js"></script>
-<script src="../js/views/join.js"></script>
-<script>
-    personalize();
-</script>
 </body>
 </html>
 

@@ -1,0 +1,12 @@
+
+
+.awards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.award {
+    padding: 0 12px;
+    text-align: center;
+}

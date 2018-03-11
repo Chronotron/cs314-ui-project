@@ -1,0 +1,21 @@
+.card {
+    position: relative;
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    border: 1px solid #6FC042;
+}
+
+.card .card-content {
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
+
+.card .card-content .card-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 300;
+}

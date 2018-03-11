@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Events</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <title>Events</title>
 </head>
 <body>
-Events
+<nav class="mainNavigation">
+    <ul>
+        <li><a href="../views/join.html">Join</a></li>
+        <li><a href="../views/shop.html">Shop</a></li>
+        <li><a href="../views/events.html">Events</a></li>
+        <li><a href="../views/history.html">History</a></li>
+        <li><a href="../views/contact.html">Contact</a></li>
+        <li><a href="../views/tutorials.html">Tutorials</a></li>
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+</nav>
+<div class="content">
+<div class="calendar">
+    <iframe
+        src="https://calendar.google.com/calendar/embed?src=usgsfm5phklhgrtf253hc6lvrk%40group.calendar.google.com&ctz=America%2FChicago"
+        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="search">
+    <h2>Boiz Klub Events</h2>
+
+    <input type="text" id="calendarSearch" onkeyup="searchCalendar()" placeholder="Search for names.."
+           title="Type in a name">
+
+    <ul id="calendarList">
+        <li><a href="../doc/LALScienceOfHappiness.pdf">Lunch And Learn - Science of Happiness (4/8/2018)</a></li>
+        <li><a href="../doc/LALOpsGenie.pdf">Lunch And Learn - OpsGenie Orientation (4/9/2018)</a></li>
+        <li><a href="../doc/NewMembers.pdf">Welcome New Members! - Dinner at Chilanga's (4/10/2018)</a></li>
+        <li><a href="../doc/PieEating.pdf">Charity Pie Eating Contest (4/11/2018)</a></li>
+        <li><a href=../doc/LALKeto.pdf>Lunch And Learn - Keto Cooking (4/12/2018)</a></li>
+    </ul>
+</div>
+</div>
+<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/views/events.js"></script>
 </body>
 </html>

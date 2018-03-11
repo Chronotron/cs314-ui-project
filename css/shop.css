@@ -1,0 +1,45 @@
+.shop {
+    padding: 12px;
+}
+
+.title {
+    text-align: center;
+    padding: 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin-right: 7px;
+}
+
+.product, .product-desc {
+    flex-basis: 50%;
+}
+
+.product img {
+    width: 100%;
+}
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .product {
+        flex-basis: 100%;
+    }
+
+    .product {
+        flex-grow: 2;
+    }
+
+    .product {
+        margin: 0;
+    }
+}

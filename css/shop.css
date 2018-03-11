@@ -43,3 +43,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
         margin: 0;
     }
 }
+
+
+h3.ui-state-active {
+    background-color: #248EC0 !important;
+}

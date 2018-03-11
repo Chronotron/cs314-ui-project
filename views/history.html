@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>History</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="screen and (min-width: 140px) and (max-width: 380px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 381px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="../js/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../js/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+    <title>Shop</title>
 </head>
 <body>
-History
+<nav class="mainNavigation">
+    <ul>
+        <li><a href="../views/join.html">Join</a></li>
+        <li><a href="../views/shop.html">Shop</a></li>
+        <li><a href="../views/events.html">Events</a></li>
+        <li><a href="../views/history.html">History</a></li>
+        <li><a href="../views/contact.html">Contact</a></li>
+        <li><a href="../views/tutorials.html">Tutorials</a></li>
+        <li><a href="../views/awards.html">Awards</a></li>
+        <li><a href="../views/videotutorial.html">Video Recipe</a></li>
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+</nav>
+<h2 style="text-align:center">Some Past Klub Events</h2>
+
+<div class="row">
+    <div class="column">
+        <img src="../img/pie.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../img/run.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../img/bbq.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../img/cook.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="../img/pie.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="../img/run.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="../img/bbq.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="../img/cook.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+            <img class="demo cursor" src="../img/pie.png" style="width:100%" onclick="currentSlide(1)" alt="Russel Winning Pie Eating Content">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../img/run.png" style="width:100%" onclick="currentSlide(2)" alt="Donna At The Fun Run (FAKE)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../img/bbq.png" style="width:100%" onclick="currentSlide(3)" alt="2016 BBQ">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../img/cook.png" style="width:100%" onclick="currentSlide(4)" alt="2017 Cooking Seminar">
+        </div>
+    </div>
+</div>
+<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/views/lightbox.js"></script>
 </body>
 </html>
+

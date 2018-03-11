@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/join.css">
+    <title>Survey</title>
+</head>
+<body>
+<nav class="mainNavigation">
+    <ul>
+        <li><a href="../views/join.html">Join</a></li>
+        <li><a href="../views/shop.html">Shop</a></li>
+        <li><a href="../views/events.html">Events</a></li>
+        <li><a href="../views/history.html">History</a></li>
+        <li><a href="../views/contact.html">Contact</a></li>
+        <li><a href="../views/tutorials.html">Tutorials</a></li>
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+</nav>
+<div class="content">
+    <p id="personal">
+        You're almost done %NAME%. First, fill out this survey to give us an idea about what you expect to get out of the Klub.
+    </p>
+    <hr>
+    <form id="join" name="join" onsubmit="return onSurveySubmit()">
+        <div class="inputGroup">
+            <label for="experience">Level of Cooking Experience</label>
+            <select id="experience" required>
+                <option value="1">None</option>
+                <option value="2">Some</option>
+                <option value="3">Average</option>
+                <option value="4">Accomplished</option>
+                <option value="5">Expert</option>
+            </select>
+        </div>
+        <div class="inputGroup">
+            <label>Interests (Check All That Apply)</label>
+            <label class="checkOption">
+                <input id="cooking" type="checkbox">
+                Cooking
+            </label>
+            <label class="checkOption">
+                <input id="wellness" type="checkbox">
+                Health and Wellness
+            </label>
+            <label class="checkOption">
+                <input id="charity" type="checkbox">
+                Charity Work
+            </label>
+            <label class="checkOption">
+                <input id="social" type="checkbox">
+                Meeting new people
+            </label>
+        </div>
+        <button type="submit">Join</button>
+    </form>
+</div>
+<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/views/join.js"></script>
+<script>
+    personalize();
+</script>
+</body>
+</html>
+

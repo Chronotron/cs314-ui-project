@@ -1,0 +1,22 @@
+
+.inputGroup {
+    width: 100%;
+    text-align: left;
+}
+
+select {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+}
+
+input[type=checkbox] {
+    margin-bottom: 12px;
+}
+
+.checkOption {
+    font-size: 0.8rem;
+}
+

@@ -155,7 +155,26 @@ nav.mainNavigation ul li a {
 }
 
 
+input[type=text], input[type=email], input[type=tel] {
+    width: calc(100% - 60px);
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
 
+button {
+    background-color: #248EC0;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #6FC042;
+}
 
 
 

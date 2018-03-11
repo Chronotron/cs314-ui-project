@@ -8,12 +8,8 @@
 }
 
 #calendarSearch {
-    background: url('/img/searchicon.png') no-repeat 10px 12px;
-    width: 100%;
-    font-size: 16px;
+    background: url('../img/searchicon.png') no-repeat 10px 12px;
     padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px;
 }
 
 #calendarList {
@@ -34,5 +30,6 @@
 }
 
 #calendarList li a:hover:not(.header) {
-    background-color: #eee;
+    background-color: #6FC042;
+    color: white;
 }
